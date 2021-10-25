@@ -1,0 +1,20 @@
+<div class="container" style="margin-top: 5vh">
+  <div>
+    <h2 class="cool-text">Multi-State-Animation</h2>
+    <p>A best friend comes in many forms, mine comes into this one.</p>
+  </div>
+  <div>
+    <img [src]="photoUrl" [@burgerState]="position" class="photo" />
+  </div>
+  <div>
+    <button (click)="changePosition('move')" class="btn btn-primary">
+      Translate
+    </button>
+    <button (click)="changePosition('spin')" class="btn btn-primary">
+      Rotate
+    </button>
+    <button (click)="changePosition('enlarge')" class="btn btn-primary">
+      Scale/Normalize
+    </button>
+  </div>
+</div>

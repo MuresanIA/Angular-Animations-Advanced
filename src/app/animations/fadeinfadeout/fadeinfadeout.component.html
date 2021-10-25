@@ -1,0 +1,27 @@
+<div class="container margin-top">
+  <h2 class="cool-text">Fade in Fade Out animation</h2>
+  <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the
+    1500s, when an unknown printer took a galley of type and scrambled it to
+    make a type specimen book. It has survived not only five centuries, but also
+    the leap into electronic typesetting, remaining essentially unchanged. It
+    was popularised in the 1960s with the release of Letraset sheets containing
+    Lorem Ipsum passages, and more recently with desktop publishing software
+    like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+
+  <div [@fadeInFadeOut]="stateName">
+    <p>
+      <img
+        height="100px"
+        width="250px"
+        src="https://img1.wsimg.com/isteam/ip/c04c39d4-6aed-4151-8a61-c4613f3a32c4/0E31CE53-48DC-4710-BDE5-DA0193AFB4A9.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:400,cg:true"
+      />
+    </p>
+    <p>Helpful message shown in the UI</p>
+  </div>
+  <button (click)="toggle()" class="btn btn-primary">
+    Toggle FadeInFadeOut
+  </button>
+</div>
